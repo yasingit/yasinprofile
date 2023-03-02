@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root {
+    --dimwhite : #f3f5f8 ;
+    --white : #ffffff;
+    /* --darkgray   : #3d535f; */
+    --darkgray   : #1f2235;
+    --voilet : #7f00ff;
+}
+body {
+    overflow-x: hidden;
+    background-color: var(--dimwhite)!important;
+}
+
+.logo {
+  font-size: 32px!important;
+  font-weight: 700!important;
+  color: var(--darkgray)!important;
+  letter-spacing: 3px!important;
+  cursor: pointer!important;
+  text-transform: uppercase!important;
+  line-height: 50px!important;
+}
+b {
+  font-size: 70px;
+  color: var(--voilet);
+  border-radius: 50%;
+}
+
+.btns {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--white);
+    background-color: var(--darkgray);
+    padding: 8px 14px;
+    margin: 10px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0,0,0, 0.4);
+    border-radius: 4px;
+}
+
+.wrapper::after {
+  position: absolute;
+  content: '';
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  left: 45%;
+  top: 12%;
+  background: linear-gradient(70deg, #7f00ff, pink);
+  animation: object1 6s linear infinite;
+}
+
+@keyframes object1 {
+  50% {
+      left: -13px;
+      top: 41%;
+  }
+}
+
+.socialIcons {
+  font-size : 24px!important;
+  padding: 0px 15px!important;
+}
+.socialIcons:hover {
+  color: #FF4A57!important;
+}
+
+.itemService {
+    background: #23263A;
+    padding: 30px 10px;
+    transition: .5s;
+    border-radius: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    height: 377px;
+}
+.itemService:hover {
+  background-color: #FF4A57;
+  color: #ffffff;
+}
+
+.iconSeviceCard {
+  font-size: 35px!important;
+  transition: transform .7s ease-in-out;
+}
+.iconSeviceCard:hover {
+  transform: rotateY(360);
+}
+.desSeviceCard {
+  font-size: 16px;
+  color: #dfdfdf;
+  line-height: 26px;
+}
+
+.headingServiceCard{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #FF4A57;
+    font-size: 24px!important;
+    padding-bottom: 2px;
+}
+.itemService:hover .headingServiceCard{
+  border-bottom: 2px solid #1f2235;
+
+}
+.btns:hover {
+  background-color: #FF4A57;
+}
+
+.LinkHome:hover {
+  color: #FF4A57!important;
+  /* font-weight: bold; */
+}
+
+.footer {
+  padding: 40px 0px;
+  border-top: 1px solid #1f2235;
+  /* background-color: #1f2235; */
+}
+
+.footHeading {
+  font-weight: bold;
+  color: #1f2235;
+  line-height: 20px;
+  font-size: 16px;
+}
+.footDecs {
+  font-weight: bold;
+  color: #1f2235;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .resbottom {
+    margin-bottom: 30px!important;
+  }
+}
